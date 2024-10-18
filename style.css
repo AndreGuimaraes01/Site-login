@@ -9,18 +9,10 @@
     color: white;
 }
 
-#afastar {
-    margin-top: 100px;
-}
-
-#paragrafo {
-
-    font-size: 17px;
-}
 
 .centralizar {
 
-    color: #FFD700;
+    color: red;
     display: flex;
     justify-content: center;
     align-items: center;
