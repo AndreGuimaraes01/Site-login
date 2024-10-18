@@ -4,6 +4,14 @@
     align-items: center;
     height: 10vh;
     margin: 0;
+    font-size: 35px;
+    font-weight: bold;
+
+
+}
+
+#afastar {
+    margin-top: 100px;
 }
 
 .centralizar {
