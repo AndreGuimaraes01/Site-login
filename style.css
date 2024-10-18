@@ -23,3 +23,11 @@
     justify-content: center;
     align-items: center;
 }
+
+body {
+
+    background-image: url('imagem\ do\ espaço.png');
+    background-size: cover; /* faz a imgaem cobrir a tela inteira */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+
+}
