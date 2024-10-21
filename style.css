@@ -24,7 +24,7 @@
     left: 0;
     width: 100vw; /* 100% da largura da viewport (tela) */
     height: 100vh; /* 100% da altura da viewport (tela) */
-    object-fit: cover; /* Faz o vídeo cobrir o fundo sem distorção */
+    object-fit: cover; /* Faz o vídeo cobrir todo o fundo sem distorção */
     z-index: -1; /* Coloca o vídeo atrás de todo o conteúdo */
 }
 body {
