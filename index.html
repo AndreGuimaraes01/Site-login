@@ -14,8 +14,8 @@
         <br><br><!--Quebra de linha-->
         <input id = "Input-login" type="password" placeholder="Senha">
         <br><br>
-        <button>Enviar</button> <button>Cadastrar</button>
-
+        <button>Enviar</button> <button id="Cadastrar">Cadastrar</button>
+        <!--Eu poderia ter usado isto: <button onclick="window.location.href=''">Cadastrar</button>-->
     </div>
 
 
@@ -23,5 +23,12 @@
         <source src = "video1.mp4">
     </video>
     
+    <script>
+        document.getElementById("Cadastrar").addEventListener("click", function() {
+            window.location.href = "form.html";
+        
+        });
+    </script>
+
 </body>
 </html>
