@@ -9,10 +9,26 @@
 <body>
 
     <div class = "form-cadastro">
-        <form>
+        <form action = "">
             <fieldset>
-                <legend><b>Cadastro</b></legend><!--o <b> serve para deixar a palavra em negrito-->>
-                    
+                <legend><b>Cadastro</b></legend><!--o <b> serve para deixar a palavra em negrito-->
+                <br>
+                <div class = "inputBox"><!-- .nome cria uma div com uma class ja-->
+                    <input type = "text" name = "Nome" id = "Nome" class = "inputUser" required>
+                    <label for = "Nome"> Nome completo</label>
+                </div>
+
+                <div class = "inputBox"><!-- .nome cria uma div com uma class ja-->
+                    <input type = "email" name = "email" id = "email" class = "inputUser" required>
+                    <label for = "email"> Email</label>
+                </div>
+
+                <div class = "inputBox"><!-- .nome cria uma div com uma class ja-->
+                    <input type = "tel" name = "telefone" id = "telefone" class = "inputUser" required>
+                    <label for = "telefone"> Telefone</label>
+                </div>
+                <p>Sexo: </p>
+                <input type = "radio" name = "genero" value = "Feminino" required>
             </fieldset>
         </form>
 
