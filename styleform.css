@@ -14,11 +14,21 @@
 }
 
 #titulo {
-
     color: white;
 
 }
 
 #submit {
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;/* para mudar as letras*/
+
+}
+
+.form-cadastro{
+    position: absolute;/*para ocupar apenas o espaço dela mesma*/
     
+
 }
