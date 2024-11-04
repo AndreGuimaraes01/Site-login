@@ -24,7 +24,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;/* para mudar as letras*/
-    height: 100%;
+    
 }
 
 .formCadastro{
@@ -32,9 +32,11 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8); /*para deixar transparente a box do formulário */
+    padding: 15px;
+    border-radius: 15px; /*Para nivelar a borda */
+    width: 20%;
+
 }
 
 .teste {
