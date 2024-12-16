@@ -11,6 +11,19 @@
 
 .inputBox {
     color: white;
+    position: relative;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;/*Para quando clicar no linha de cadastro, nao aparecer o contraste em volta. */
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 1px; /*Aumentar o espaço entre cada caracter */
+
 }
 
 #titulo {
@@ -24,6 +37,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;/* para mudar as letras*/
+    /* background-image: linear-gradient(to right, rgb(20,147, 220), rgb(17, 54, 71) (Outro estilo de fundo mais simples)*/
     
 }
 
@@ -31,7 +45,7 @@ body {
     position: absolute;/*para ocupar apenas o espaço dela mesma*/
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);/*centralizando */
     background-color: rgba(0, 0, 0, 0.8); /*para deixar transparente a box do formulário */
     padding: 15px;
     border-radius: 15px; /*Para nivelar a borda */
@@ -39,6 +53,10 @@ body {
 
 }
 
-.teste {
-    
+legend{
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+
 }
