@@ -26,13 +26,6 @@
 
 }
 
-.labelInput{
-
-    position: absolute;
-
-
-}
-
 #titulo {
     color: white;
 
@@ -62,4 +55,18 @@ legend{
     text-align: center;
     border-radius: 5px;
 
+}
+.labelInput{/*Para trabalhar na animação ao clicar no campo de preencher. */
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5px;
+
+}
+
+.inputUser:focus ~ .labelInput{/*o "focus" faz criar uma animação no labelInput  */
+    top: -20px; /*faz a palavra email, nome completo etc, ir para cima */
+    font-size: 12px;
 }
