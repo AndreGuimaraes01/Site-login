@@ -66,7 +66,40 @@ legend{
 
 }
 
-.inputUser:focus ~ .labelInput{/*o "focus" faz criar uma animação no labelInput  */
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {/*o "focus" faz criar uma animação no labelInput ao clicar na linha para informação, como nome, email, etc. O valid, faz com que ao preencher o nome, email, etc. Nao volte a palavra email, nome para nao conflitar visualmente com a informação adicionada. */
     top: -20px; /*faz a palavra email, nome completo etc, ir para cima */
     font-size: 12px;
+    color:orchid;
+    /*
+    color:lightblue; // cores boas tambem
+    color:orchid;*/
+}
+
+#data_nascimento{
+    border: none;
+    padding: 8px;
+    border-radius: 10px; /*Deixar a borda circular */
+    outline: none; /*Para sumir a linha que fica ao clicar */
+    font-size: 15px;
+}
+
+#data_texto{
+    color: white;
+}
+
+#submit{
+    background-image: linear-gradient(to right, rgb(0,92,187), rgb(90,20,220));
+    width: 100%;/*Aumenta a largura */
+    border: none;/*Tirar a borda*/
+    padding: 15px;/*Aumenta a altura */
+    color: white;
+    font-size: 15px;
+    cursor: pointer;/*Para mudar o cursor quando passar em cima */
+    border-radius: 10px;
+
+}
+
+#submit:hover{/*Quando passar o mouse por cima, a cor vai ficar mais escura*/
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
 }
