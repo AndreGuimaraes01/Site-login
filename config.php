@@ -9,7 +9,9 @@
 
     if($conexao->connect_error){
         echo "Erro";
-    }else {
-        echo "conexão efetuada com sucesso.";
+    }else {                                     //Para testar se esta conectado
+        echo "Conexão efetuada com sucesso.";
     }
+
+    
 ?>

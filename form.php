@@ -1,3 +1,11 @@
+<?php
+    if (isset($_POST['submit'])){
+        print_r($_POST["Nome"]);
+        print_r($_POST["Nome"]);
+        print_r($_POST["Nome"]);
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +18,7 @@
     
 
     <div class = "formCadastro">
-        <form action = "">
+        <form action = "formulario.php" method="POST">
             <fieldset>
                 <legend id = "titulo"><b>Cadastro</b></legend><!--o <b> serve para deixar a palavra em negrito-->
                 <br>
