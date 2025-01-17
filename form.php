@@ -1,9 +1,20 @@
 <?php
-    if (isset($_POST['submit'])){
-        print_r($_POST["Nome"]);
-        print_r($_POST["Nome"]);
-        print_r($_POST["Nome"]);
-    }
+    // if (isset($_POST['submit'])){
+    //     print_r($_POST["Nome"]);
+    //     print_r($_POST["email"]);
+    //     print_r($_POST["telefone"]);
+    // }
+    include_once('config.php');
+    $Nome = $POST['nome'];
+    $email = $POST['email'];
+    $telefone = $POST['telefone'];
+    $sexo = $POST['genero'];
+    $data_nascimento = $POST['data_nascimento'];
+    $cidade = $POST['cidade'];
+    $estado = $POST['estado'];
+    $endereco = $POST['endereco'];
+
+    $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,telefone,sexo,nascimento,cidade,estado,endereco) VALUES");
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +29,7 @@
     
 
     <div class = "formCadastro">
-        <form action = "formulario.php" method="POST">
+        <form action = "form.php" method="POST">
             <fieldset>
                 <legend id = "titulo"><b>Cadastro</b></legend><!--o <b> serve para deixar a palavra em negrito-->
                 <br>
@@ -63,7 +74,7 @@
                 </div>
                 <br><br>
                 <div class = "inputBox">
-                    <input type = "text" nome = "endereço" id = "endereço" class = "inputUser" required>
+                    <input type = "text" nome = "endereco" id = "endereço" class = "inputUser" required>
                     <label for = "endereço" class="labelInput">Endereço</label>
                 </div>
                 <br><br>
