@@ -1,20 +1,22 @@
 <?php
-    // if (isset($_POST['submit'])){
-    //     print_r($_POST["Nome"]);
-    //     print_r($_POST["email"]);
-    //     print_r($_POST["telefone"]);
-    // }
-    include_once('config.php');
-    $Nome = $POST['nome'];
-    $email = $POST['email'];
-    $telefone = $POST['telefone'];
-    $sexo = $POST['genero'];
-    $data_nascimento = $POST['data_nascimento'];
-    $cidade = $POST['cidade'];
-    $estado = $POST['estado'];
-    $endereco = $POST['endereco'];
+    if (isset($_POST['submit'])){
+        // print_r($_POST["Nome"]);
+        // print_r($_POST["email"]);
+        // print_r($_POST["telefone"]);
 
-    $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,telefone,sexo,nascimento,cidade,estado,endereco) VALUES");
+        include_once('config.php');
+        $Nome = $POST['nome'];
+        $email = $POST['email'];
+        $telefone = $POST['telefone'];
+        $sexo = $POST['genero'];
+        $data_nascimento = $POST['data_nascimento'];
+        $cidade = $POST['cidade'];
+        $estado = $POST['estado'];
+        $endereco = $POST['endereco'];
+
+        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,telefone,sexo,nascimento,cidade,estado,endereco) 
+        VALUES ('$Nome','$email','$telefone','$sexo','$data_nascimento','$cidade','$estado','$endereco')");
+    }
 ?>
 
 <!DOCTYPE html>
