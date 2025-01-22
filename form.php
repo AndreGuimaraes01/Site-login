@@ -5,17 +5,17 @@
         // print_r($_POST["telefone"]);
 
         include_once('config.php');
-        $Nome = $POST['nome'];
-        $email = $POST['email'];
-        $telefone = $POST['telefone'];
-        $sexo = $POST['genero'];
-        $data_nascimento = $POST['data_nascimento'];
-        $cidade = $POST['cidade'];
-        $estado = $POST['estado'];
-        $endereco = $POST['endereco'];
+        $Nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $telefone = $_POST['telefone'];
+        $sexo = $_POST['genero'];
+        $data_nascimento = $_POST['data_nascimento'];
+        $cidade = $_POST['cidade'];
+        $estado = $_POST['estado'];
+        $endereco = $_POST['endereco'];
 
         $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,telefone,sexo,nascimento,cidade,estado,endereco) 
-        VALUES ('$Nome','$email','$telefone','$sexo','$data_nascimento','$cidade','$estado','$endereco')");
+        VALUES ('$nome','$email','$telefone','$genero','$data_nascimento','$cidade','$estado','$endereco')");
     }
 ?>
 
@@ -31,13 +31,13 @@
     
 
     <div class = "formCadastro">
-        <form action = "form.php" method="POST">
+        <form action = "form.php" method="post">
             <fieldset>
                 <legend id = "titulo"><b>Cadastro</b></legend><!--o <b> serve para deixar a palavra em negrito-->
                 <br>
                 <div class = "inputBox"><!-- .nome cria uma div com uma class ja-->
-                    <input type = "text" name = "Nome" id = "Nome" class = "inputUser" required>
-                    <label for = "Nome" class="labelInput"> Nome completo</label>
+                    <input type = "text" name = "nome" id = "nome" class = "inputUser" required>
+                    <label for = "nome" class="labelInput"> Nome completo</label>
                 </div>
                 <br><br>
                 <div class = "inputBox"><!-- .nome cria uma div com uma class ja-->
@@ -76,8 +76,8 @@
                 </div>
                 <br><br>
                 <div class = "inputBox">
-                    <input type = "text" nome = "endereco" id = "endereço" class = "inputUser" required>
-                    <label for = "endereço" class="labelInput">Endereço</label>
+                    <input type = "text" nome = "endereco" id = "endereco" class = "inputUser" required>
+                    <label for = "endereco" class="labelInput">Endereço</label>
                 </div>
                 <br><br>
                 <input type = "submit" name = "submit" id = "submit">
